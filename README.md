@@ -9,18 +9,18 @@ Neste repositório, apresento os códigos que utilizei para gerar as informaçõ
 Destaque para as tendências temporais de classes:
 
 <p align= "center">
-  <img src= "Output/classe_ano.png" width="500">
+  <img src= "Output/classe_ano.png" width="600" height="300">
 </p>
 
 E também por espécie:
 
 <p align= "center">
-  <img src= "Output/sp_ano.png" width="500">
+  <img src= "Output/sp_ano.png" width="600" height="800">
 </p>
 
 E a densidade de encalhe no litoral sul ao longo dos 5 anos examinados:
 
 
 <p align= "center">
-  <img src= "Output/densidade.png" width="500">
+  <img src= "Output/densidade.png" width="600" height="700">
 </p>
