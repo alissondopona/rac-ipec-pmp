@@ -15,7 +15,7 @@ Destaque para as tendências temporais de classes:
 E também por espécie:
 
 <p align= "center">
-  <img src= "Output/sp_ano.png" width="600" height="800">
+  <img src= "Output/sp_ano.png" width="600" height="1000">
 </p>
 
 E a densidade de encalhe no litoral sul ao longo dos 5 anos examinados:
