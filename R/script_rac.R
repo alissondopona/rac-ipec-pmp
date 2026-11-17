@@ -7,8 +7,6 @@
 # Load libraries
 library(tidyverse)
 
-
-
 # ~~~~~~~~~~~~~~~~~~~~~~~ Load data
 dat_1 <- read.csv("Data/Processed/O_fauna_alvo_individual_cinco_1.csv", 
                   stringsAsFactors = TRUE,
@@ -32,20 +30,18 @@ glimpse(dat_1)
 glimpse(dat_2)
 glimpse(dat_3)
 
+# ~~~~~~~~~~~~~~~~~~~~~~~ Join the databases
+dat <- rbind(dat_1, dat_2, dat_3)
+glimpse(dat)
+
 # ~~~~~~~~~~~~~~~~~~~~~~~ Selecting the data
 
-dat_1 <- data.frame(dat_1[,c(6,8,16,17,20,21,26,31,32,37,38,39,40,42,43,47,52,70,71,72,77)])
-dat_2 <- data.frame(dat_2[,c(6,8,16,17,20,21,26,31,32,37,38,39,40,42,43,47,52,70,71,72,77)])
-dat_3 <- data.frame(dat_3[,c(6,8,16,17,20,21,26,31,32,37,38,39,40,42,43,47,52,70,71,72,77)])
-
-# ~~~~~~~~~~~~~~~~~~~~~~~ Join the databases
-
-dat <- rbind(dat_1, dat_2, dat_3)
+dat <- data.frame(dat[,c(2,6,8,16,20,21,22,36,37,38,39,42,46,69,70,71,76)])
 glimpse(dat)
 
 # ~~~~~~~~~~~~~~~~~~~~~~~ Renaming the variables
 
-colnames(dat) <- c("cidade","trecho","responsavel","tipo.monitoramento", "fauna.coletiva","data","classe", "sp", "sp.ameaçada", "condicao","cond.corporea","int.fisica","pres.oleo","estag.desenv", "cod","cond.final","destino", "ofai.sexo","ofai.estag.desenv","ofai.classe","ofai.sp")
+colnames(dat) <- c("fai","cidade","trecho","tipo.monitoramento", "data", "lat", "long", "condicao","cond.corporea","int.fisica","pres.oleo", "cod","cond.final", "ofai.sexo","ofai.estag.desenv","ofai.classe","ofai.sp")
 
 # ~~~~~~~~~~~~~~~~~~~~~~~ Re coding the variable
 dat$data <- as.Date(dat$data, format = "%d/%m/%Y")
@@ -237,23 +233,3 @@ ggsave("Output/sp_tarta.png",
        dpi = 300,
        height = 6,
        width = 6)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
