@@ -4,7 +4,7 @@ Durante o ano de 2021, eu e alguns colegas do Instituto de Pesquisas Cananéia (
 
 A ideia era mostrar como tinha sido o trabalho durante esse período em cada um dos setores, e poder gerar discussões visando a melhoria da dinâmica de trabalho.
 
-Neste repositório, apresento os códigos que utilizei para gerar as informações sobre o setor de Campo. No diretório [`Output`](https://github.com/alissondopona/rac-ipec-pmp/tree/e69653911ae1bf1f62698b1918aa33ee4c3c6cec/Output) é possível vizualizar todos os gráficos utilizados.
+Neste repositório, apresento os códigos que utilizei para gerar as informações sobre o setor de Campo. No diretório [`Output`](https://github.com/alissondopona/rac-ipec-pmp/tree/main/Output) é possível vizualizar todos os gráficos utilizados.
 
 Destaque para as tendências temporais de classes:
 
