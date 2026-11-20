@@ -12,7 +12,7 @@ Destaque para as tendências temporais de classes:
   <img src= "Output/classe_ano.png" width="600" height="300">
 </p>
 
-E também por espécie:
+E também a frequência de encalhe por espécie:
 
 <p align= "center">
   <img src= "Output/sp_ano.png" width="600" height="1000">
